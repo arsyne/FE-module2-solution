@@ -1,14 +1,14 @@
 body{font-family: Comic Sans MS;font-size:15px;}
-*{box-sizing:border-box;}
-
+*{box-sizing:border-box;margin:0;padding:0;}
+#item{padding:10px;}
 .row{width:100%;}
 .header{font-size:175%;text-align:center;font-weight:bold;}
-.container{margin:15px auto 5px auto;width:90%;border:1px solid black;background-color:grey;}
-.menu-title{width:100px;font-size:125%;font-weight:bold;text-align:center;float:right;position:relative;top:-20px;right:-1px;border:1px solid black;padding:0 5px 0 5px;}
-.menu-title.chicken{background-color:pink}
-.menu-title.beef{background-color:red}
-.menu-title.sushi{background-color:yellow}
-.description{margin:20px 10px 10px 10px;}
+.container{position:relative;padding:10px;border:1px solid black;background-color:WhiteSmoke;}
+.menu-title{position:absolute;top:0;right:0;width:100px;font-size:125%;font-weight:bold;text-align:center;border-left:1px solid black;border-bottom:1px solid black;}
+.chicken{background-color:LightPink}
+.beef{background-color:DarkSalmon}
+.sushi{background-color:BlanchedAlmond}
+.description{margin:30px 10px 0 10px;}
 
 /**Desktop view**/
 @media screen and (min-width:992px){
@@ -25,7 +25,6 @@ body{font-family: Comic Sans MS;font-size:15px;}
   .col-lg-10{width:83.33%}
   .col-lg-11{width:91.66%}
   .col-lg-12{width:100%}
-  .container{width:90%;}
 }
 /**Tablet view**/
 @media screen and (min-width:768px) and (max-width: 991px){
@@ -42,5 +41,4 @@ body{font-family: Comic Sans MS;font-size:15px;}
   .col-md-10{width:83.33%}
   .col-md-11{width:91.66%}
   .col-md-12{width:100%}
-  .container.sushi{width:95%;}
 }
